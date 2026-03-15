@@ -112,3 +112,41 @@ Reschedule pods
 ## Interview Explanation
 
 "I have experience performing EKS cluster upgrades through multiple approaches. Manually, I've used the AWS console to upgrade the control plane and worker nodes while monitoring system components to ensure stability and zero downtime. Using the AWS CLI, I scripted cluster and node upgrades, validating addon and pod health to maintain operational reliability. With Terraform, I automated the entire upgrade process, managing cluster versions, node groups, and default addons like CoreDNS, kube-proxy, VPC CNI, and EBS CSI sequentially to avoid throttling. I also implemented best practices such as version pinning for critical addons, rolling updates for node groups, and health checks for system pods, ensuring upgrades are predictable and low-risk. By combining automation, monitoring, and sequential deployment, I was able to minimize downtime, maintain application availability, and deliver a fully auditable, repeatable process across multiple environments. This approach also improved team efficiency, reduced manual intervention, and allowed seamless scaling of the infrastructure."
+
+Interview question:
+Why are nodes terminating during upgrade?
+
+What is cordon and why is it used?
+
+Difference between cordon and drain?
+
+Why cluster still works during control plane upgrade?
+
+Does EKS upgrade nodes in-place?
+
+How to rollback if upgrade causes issues?
+What is EKS version upgrade?
+
+What are the components involved in EKS upgrade?
+
+Difference between Control Plane upgrade and Node Group upgrade?
+
+Is EKS control plane upgrade automatic or manual?
+
+What is the current Kubernetes version supported by EKS?
+
+Can we skip Kubernetes versions while upgrading?
+
+What is the upgrade order in EKS?
+
+What happens if worker nodes are not upgraded?
+
+How do you check current cluster version?
+
+Will my application go down during upgrade?
+
+How to upgrade kube-proxy and CoreDNS?
+
+What is Add-on upgrade in EKS?
+
+How do you upgrade EKS add-ons?
